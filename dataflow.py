@@ -1,7 +1,15 @@
 from flask import Flask, request, render_template, session, g
 from sqlite3 import dbapi2 as sqlite3
 from werkzeug import generate_password_hash
+import os
 
+app = Flask(__name__)
+
+app.config.update(dict(
+    DATABASE=os.path.join(app.root_path, 'dataflow.db'),
+    DEBUG=True,
+    SECRET_KEY='development key'
+))
 
 def get_db():
     """Opens a new database connection if there is none yet for the
@@ -49,3 +57,10 @@ def before_request():
     if 'user_id' in session:
         g.user = query_db('select * from user where user_id = ?',
                           [session['user_id']], one=True)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run()

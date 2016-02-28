@@ -11,7 +11,9 @@ create table isp (
   region_id integer not null,
   datacoin_id integer not null,
   money_id integer not null,
-  reputation integer not null
+  reputation integer not null,
+  password_hash text not null,
+  username text not null
 )
 
 create table tech_company (
@@ -21,7 +23,9 @@ create table tech_company (
   region_id integer not null,
   datacoin_id integer not null,
   money_id integer not null,
-  reputation integer not null
+  reputation integer not null,
+  password_hash text not null,
+  username text not null
 )
 
 create table datacoin (
