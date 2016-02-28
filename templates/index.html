@@ -3,7 +3,6 @@
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='index/index.css')}}">
 <script src="{{ url_for('static', filename='index/index.js')}}"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='index/bootstrap-select.css')}}">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 {% endblock %}
 {% block body %}
@@ -11,22 +10,36 @@
   <h2><span class="entypo-login"></span> Login</h2>
   <button class="submit"><span class="entypo-lock"></span></button>
   <span class="entypo-user inputUserIcon"></span>
-  <input type="text" class="user" placeholder="ursername"/>
+  <input type="text" class="user" placeholder="username"/>
   <span class="entypo-key inputPassIcon"></span>
   <input type="password" class="pass"placeholder="password"/>
 </form>
 <form action="">
   <h2><span class="entypo-login"></span> Register </h2>
   <button class="submit register-btn"><span class="entypo-lock"></span></button>
-  <span class="entypo-user inputUserIcon"></span>
-  <input type="text" class="user" placeholder="ursername"/>
-  <span class="entypo-key inputPassIcon"></span>
-  <input type="password" class="pass"placeholder="password"/>
+  <input type="text" class="user" placeholder="Username"/>
+  <input type="password" class="pass"placeholder="Password"/>
+  <input type="email" class="user" placeholder="Email"/>
   <input type="text" class="user" placeholder="Company short name"/>
   <input type="text" class="user" placeholder="Company long name"/>
-  <select class="selectpicker" title="Company Type" data-style="select-bs">
+  <select class="select-bs" data-style="select-bs">
+    <option selected="selected" disabled="disabled">Company Type</option>
     <option>ISP</option>
     <option>Developer</option>
+  </select>
+  <select class="select-bs" data-style="select-bs">
+    <option selected="selected" disabled="disabled">Company Region</option>
+    <option>North America</option>
+    <option>Central America</option>
+    <option>South America</option>
+    <option>North Africa</option>
+    <option>Central Africa</option>
+    <option>South Africa</option>
+    <option>Europe</option>
+    <option>Russia</option>
+    <option>China</option>
+    <option>Japan</option>
+    <option>Indian Ocean</option>
   </select>
 </form>
 {% endblock %}

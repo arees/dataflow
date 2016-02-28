@@ -41,30 +41,20 @@ input {
   display: block;
   margin: 15px;
   width: 300px;
-  color:white;
-  font-size:18px;
-  height: 54px;
-}
-
-div.bootstrap-select {
-  padding: 16px;
-  border-radius:7px;
-  border:0px;
-  background: rgba(255,255,255,.2);
-  display: block;
-  margin-left: 15px;
-  width: 300px;
-  color:white;
+  color: #a6a6a6;
   font-size:18px;
   height: 54px;
 }
 
 .select-bs {
+  padding: 16px;
   border-radius:7px;
   border:0px;
   background: rgba(255,255,255,.2);
+  display: block;
+  margin: 15px;
   width: 300px;
-  color:white;
+  color: #a6a6a6;
   font-size:18px;
   height: 54px;
 }
@@ -88,7 +78,7 @@ button {
 }
 
 .register-btn {
-  height: 222px;
+  height: 470px;
 }
 
 .inputUserIcon {
