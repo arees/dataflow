@@ -46,13 +46,23 @@ input {
   height: 54px;
 }
 
-.select-bs {
+div.bootstrap-select {
   padding: 16px;
   border-radius:7px;
   border:0px;
   background: rgba(255,255,255,.2);
   display: block;
-  margin: 15px;
+  margin-left: 15px;
+  width: 300px;
+  color:white;
+  font-size:18px;
+  height: 54px;
+}
+
+.select-bs {
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.2);
   width: 300px;
   color:white;
   font-size:18px;
