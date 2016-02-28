@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, session, g
+from flask import Flask, request, render_template, session, g 
 from sqlite3 import dbapi2 as sqlite3
 from werkzeug import generate_password_hash
 import os
