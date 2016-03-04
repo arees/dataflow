@@ -22,24 +22,32 @@
   <input type="email" class="user" placeholder="Email"/>
   <input type="text" class="user" placeholder="Company short name"/>
   <input type="text" class="user" placeholder="Company long name"/>
-  <select class="select-bs" data-style="select-bs">
+  <select class="select-bs" data-style="select-bs" id="company-type">
     <option selected="selected" disabled="disabled">Company Type</option>
-    <option>ISP</option>
-    <option>Developer</option>
+    <option value="isp">ISP</option>
+    <option value="dev">Developer</option>
   </select>
   <select class="select-bs" data-style="select-bs">
     <option selected="selected" disabled="disabled">Company Region</option>
-    <option>North America</option>
-    <option>Central America</option>
-    <option>South America</option>
-    <option>North Africa</option>
-    <option>Central Africa</option>
-    <option>South Africa</option>
-    <option>Europe</option>
-    <option>Russia</option>
-    <option>China</option>
-    <option>Japan</option>
-    <option>Indian Ocean</option>
+    <option value="namerica">North America</option>
+    <option value="camerica">Central America</option>
+    <option value="samerica">South America</option>
+    <option value="nafrica">North Africa</option>
+    <option value="cafrica">Central Africa</option>
+    <option value="safrica">South Africa</option>
+    <option value="europe">Europe</option>
+    <option value="russia">Russia</option>
+    <option value="china">China</option>
+    <option value="jap">Japan</option>
+    <option value="ind">Indian Ocean</option>
+  </select>
+  <select id="select-isp" data-style="select-bs" class="select-bs">
+    <option selected="selected" disabled="disabled">ISP</option>
+    <option>Test</option>
+    <option>TEST</option>
+    <option>TEST</option>
+    <option>test</option>
+    <option>test</option>
   </select>
 </form>
 {% endblock %}

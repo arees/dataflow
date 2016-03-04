@@ -1,3 +1,8 @@
+/*
+Copyright 2016 Developex Ltd
+Made by DimitriWayland
+*/
+
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
@@ -64,7 +69,6 @@ input:focus {
   background: rgba(255,255,255,.95);
   color: #e74c3c;
 }
-
 button {
   float:right;
   height: 121px;
@@ -78,6 +82,7 @@ button {
 }
 
 .register-btn {
+  /*height: 540px; is activated when the #select-isp element is shown.*/
   height: 470px;
 }
 
