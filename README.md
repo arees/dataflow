@@ -1,2 +1,3 @@
 # dataflow
-A Web based game about the internet, tech corporations and stuff.
+## A Web based game about money hungry ISP's, Internet Affecting laws, Dirty tech companys and world internet access and demand
+
