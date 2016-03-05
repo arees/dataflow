@@ -39,11 +39,3 @@ create table money (
   money_id integer primary key autoincrement,
   money_value integer not null
 )
-
-create table regions (
-  region_id integer primary key autoincrement,
-  infraestructure integer not null,
-  population integer not null,
-  internet_percentage integer not null,
-  demand_percentage integer not null
-)
