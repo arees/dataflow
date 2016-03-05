@@ -1,3 +1,3 @@
-# dataflow
-## A Web based game about money hungry ISP's, Internet Affecting laws, Dirty tech companys and world internet access and demand
+![Dataflow](http://i.imgur.com/ZAFdHEm.png) 
 
+A game about cheaty ISP's, Net neutrality, Internet Access around the globe and dirty tech comapnies
