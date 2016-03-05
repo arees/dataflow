@@ -1,6 +1,7 @@
 "regions": [
   {
     "name": "southamerica",
+    "id": 1,
     "population": 408671380,
     "users": 249291302,
     "infraestructure": 50,
@@ -8,30 +9,34 @@
   {
     "name": "northamerica",
     "population": 565265000,
-    "speed": 7.1,
+    "id": 2,
     "users": 457864650,
     "infraestructure": 60
   },
   {
     "name": "africa",
+    "id": 3,
     "population": 1110635000,
     "users": 268209162,
     "infraestructure": 10
   },
   {
     "name": "europe",
+    "id": 4,
     "population": 742452000,
     "users": 520381481,
     "infraestructure": 70,
   },
   {
     "name": "asia",
+    "id": 5,
     "population": 4050404000,
     "users": 1322491069,
     "infraestructure": 45
   },
   {
     "name": "oceania",
+    "id": 6,
     "population": 36659000,
     "users": 25109590,
     "infraestructure": 60

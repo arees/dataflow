@@ -14,35 +14,30 @@
   <span class="entypo-key inputPassIcon"></span>
   <input type="password" class="pass"placeholder="password"/>
 </form>
-<form action="">
+<form action="{{ url_for('register') }}" method="post">
   <h2><span class="entypo-login"></span> Register </h2>
-  <button class="submit register-btn"><span class="entypo-lock"></span></button>
-  <input type="text" class="user" placeholder="Username"/>
-  <input type="password" class="pass"placeholder="Password"/>
-  <input type="email" class="user" placeholder="Email"/>
-  <input type="text" class="user" placeholder="Company short name"/>
-  <input type="text" class="user" placeholder="Company long name"/>
-  <select class="select-bs" data-style="select-bs" id="company-type">
+  <button class="submit register-btn" type="submit"><span class="entypo-lock"></span></button>
+  <input type="text" class="user" name="user" placeholder="Username"/>
+  <input type="password" class="pass" name="pswd" placeholder="Password"/>
+  <input type="email" class="user" name="email" placeholder="Email"/>
+  <input type="text" class="user" name="csn" placeholder="Company short name"/>
+  <input type="text" class="user" name="cln" placeholder="Company long name"/>
+  <select class="select-bs" data-style="select-bs" id="company-type" name="company-type">
     <option selected="selected" disabled="disabled">Company Type</option>
     <option value="isp">ISP</option>
     <option value="dev">Developer</option>
   </select>
-  <select class="select-bs" data-style="select-bs">
+  <select class="select-bs" data-style="select-bs" name="company-region" id="company-region">
     <option selected="selected" disabled="disabled">Company Region</option>
-    <option value="namerica">North America</option>
-    <option value="samerica">South America</option>
-    <option value="africa">Africa</option>
-    <option value="europe">Europe</option>
-    <option value="asia">Asia</option>
-    <option value="oceania">Oceania</option>
+    <option value="2">North America</option>
+    <option value="1">South America</option>
+    <option value="3">Africa</option>
+    <option value="4">Europe</option>
+    <option value="5">Asia</option>
+    <option value="6">Oceania</option>
   </select>
-  <select id="select-isp" data-style="select-bs" class="select-bs">
-    <option selected="selected" disabled="disabled">ISP</option>
-    <option>Test</option>
-    <option>TEST</option>
-    <option>TEST</option>
-    <option>test</option>
-    <option>test</option>
+  <select id="select-isp" data-style="select-bs" class="select-bs" name="company-isp">
+    <option selected="selected" disabled="disabled">Select ISP</option>
   </select>
 </form>
 {% endblock %}
