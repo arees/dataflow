@@ -86,6 +86,10 @@ def before_request():
 def index():
     return render_template("index.html")
 
+@app.route("/<html>")
+def render_html(html):
+    return render_template(html)
+
 @app.route("/register", methods=["POST"])
 def register():
     if request.method == 'POST':
@@ -113,7 +117,6 @@ def register():
 
         db.commit()
         return redirect(url_for('index'))
-
 
 @app.route('/get_isps_region')
 def get_isp_per_region():

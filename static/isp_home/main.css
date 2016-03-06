@@ -1,0 +1,17 @@
+body {
+  background-color: #0d0d0d;
+  font-family: 'Raleway';
+  color: white;
+}
+* {
+  font-family: 'Raleway';
+  color: white;
+}
+.main-info {
+  margin-top: 3%;
+  margin-left: 0%;
+  float: left;
+}
+.main {
+  width: 100%;
+}

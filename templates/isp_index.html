@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %} Home {% endblock %}
+{% block head %}
+  <script src="{{ url_for('static', filename='isp_home/main.js')}}"></script>
+  <script src="{{ url_for('static', filename='libs/poseidon.min.js')}}"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='isp_home/main.css')}}">
+{% endblock %}
+{% block body %}
+  <div class="container" id="welcome" style="margin-top: 3%;">
+    <h1 style="text-align: center;">Welcome back to Dataflow</h1>
+    <h2 style="text-align: center;">Click to change view</h2>
+  </div>
+  <div class="container main" style="margin-top: 3%;">
+    <div class="container main-info">
+      <i class="fa fa-btc" style="font-size: 6em"></i>
+      <h2> DataCoin wallet: </h2>
+      <h3> DataCoins: 50 </h3>
+      <h3> DataCoin Trust: 50 </h3>
+    </div>
+    <div class="container main-info">
+      <i class="fa fa-server" style="font-size: 6em;"></i>
+      <h2> Computating Power Usage: </h2>
+      <h3> Decryption: 40% </h3>
+      <h3> DataCoin Mining: 40% </h3>
+      <h3> Spamming and Pishing: 20% </h3>
+    </div>
+    <div class="container main-info">
+      <i class="fa fa-server" style="font-size: 6em"></i>
+      <h2> Computating Power Usage: </h2>
+      <h3> Decryption: 40% </h3>
+      <h3> DataCoin Mining: 40% </h3>
+      <h3> Spamming and Pishing: 20% </h3>
+    </div>
+  </div>
+{% endblock %}
