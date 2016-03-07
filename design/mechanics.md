@@ -18,5 +18,5 @@ More users, more money.
 ISP's can try to decrypt the dataflow of a company that uses then, having a chance of getting credentials.
 
 ## Developer mechanics:
-- Service Services are like apps, they have certain popularity and need certain computing power to maintain, as well as some datacoin.
-- Marketing Marketing takes certain datacoin amount and adds popularity to the selected service (depends on datacoin spent) }
+- Service: Services are like apps, they have certain popularity and need certain computing power to maintain, as well as some datacoin.
+- Marketing: Marketing takes certain datacoin amount and adds popularity to the selected service (depends on datacoin spent) }
